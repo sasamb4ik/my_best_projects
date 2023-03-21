@@ -12,7 +12,7 @@
 
 ### Machine Learning
 * [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
-* Classification task
+* [Classification task](https://github.com/sasamb4ik/Internships/blob/classification_task/Tinkoff_classification.ipynb)
 * LinearRegression task
 * UnsupervisedLearning task
 * SolvingTrees task
