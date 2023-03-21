@@ -15,7 +15,7 @@
 * [Classification task](https://github.com/sasamb4ik/Internships/blob/classification_task/Tinkoff_classification.ipynb)
 * [LinearRegression task](https://github.com/sasamb4ik/Internships/blob/linear_regression/Tinkoff_linear_regression.ipynb)
 * [UnsupervisedLearning task](https://github.com/sasamb4ik/Internships/blob/unsupervised_learning/UnsupervisedLearning.ipynb)
-* SolvingTrees task
+* [SolvingTrees task](https://github.com/sasamb4ik/Internships/blob/solving_trees/SolvingTrees.ipynb)
 * NLP task
 * Understanding of gradient boosting
 
