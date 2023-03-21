@@ -21,4 +21,4 @@
 
 ### Another projects
 * [bash-скрипт](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
-* console mine sweeper
+* [console mine sweeper](https://github.com/sasamb4ik/Internships/tree/minesweeper/minesweeper)
