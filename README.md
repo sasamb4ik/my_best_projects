@@ -14,7 +14,7 @@
 * [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
 * [Classification task](https://github.com/sasamb4ik/Internships/blob/classification_task/Tinkoff_classification.ipynb)
 * [LinearRegression task](https://github.com/sasamb4ik/Internships/blob/linear_regression/Tinkoff_linear_regression.ipynb)
-* UnsupervisedLearning task
+* [UnsupervisedLearning task](https://github.com/sasamb4ik/Internships/blob/unsupervised_learning/UnsupervisedLearning.ipynb)
 * SolvingTrees task
 * NLP task
 * Understanding of gradient boosting
