@@ -16,12 +16,12 @@ private:
   size_t outer_back = 0;
   size_t inner_front = 0;
   size_t inner_back = bucket_size - 1;
-  static const size_t delta = 3; // константа для изменения размера массива указателей
+  static const size_t delta = 3; 
 
 public:
 
   Deque();
-  ~Deque(); // правило трёх: если есть что-то из [деструктор, оператор копирования, оператор присваивания], то нужно явно определить все 3
+  ~Deque();
   Deque(size_t);
   Deque(size_t, const T&);
   Deque(const Deque<T>& other);
@@ -42,16 +42,11 @@ public:
   void push_front(const T& element);
   void pop_front();
 
-
-  // ------------------------------------- ИТЕРАТОРЫ ---------------------------------------------//
-
   template<typename Value>
   class base_iterator {
   private:
     T** buckets_;
     size_t item_index_;
-
-    // для reverse iterator
 
   public:
 
@@ -201,7 +196,7 @@ public:
   }
 
   void insert(iterator iter, const T&);
-  void erase(iterator iter); // удалить из контейнера по итератору
+  void erase(iterator iter); 
 };
 
 template <typename T>
@@ -211,11 +206,10 @@ void Deque<T>::insert(Deque<T>::iterator iter, const T& element) {
   } else if (iter == begin()) {
     push_front(element);
   } else {
-    push_back(element); // добавляем фиктивный элемент в конец
+    push_back(element);
     for (auto it = end(); it != iter; --it) {
-      *it = *(it - 1); // перемещаем все элементы
+      *it = *(it - 1);
     }
-    // кладём на нужное место element, предварительно очищая это место
     (data_[iter.get_index() / bucket_size] + (iter.get_index() % bucket_size))->~T();
     new (data_[iter.get_index() / bucket_size] + (iter.get_index() % bucket_size)) T(element);
   }
@@ -235,8 +229,6 @@ void Deque<T>::erase(Deque<T>::iterator iter) {
   }
 }
 
-// ------------------------------------- КОНСТРУКТОРЫ ------------------------------------- //
-
 template<typename T>
 Deque<T>::Deque() {
   data_.push_back(nullptr);
@@ -251,18 +243,18 @@ Deque<T>::Deque(size_t count) : Deque() {
   } else {
     alpha = (count / bucket_size) + 1;
   }
-  if (std::is_default_constructible_v<T>) { // если у T есть дефолтный конструктор
+  if (std::is_default_constructible_v<T>) { 
     for (size_t i = 0; i < count; ++i) {
       try {
         push_back(T());
-      } catch (...) { // если исключение при push_back, удаляем все добавленные до исключения элементы
+      } catch (...) { 
         for (int j = 0; j < i; ++j) {
           pop_back();
         }
         throw;
       }
     }
-  } else { // если дефолт конструктора нет, просто выделим память
+  } else {
     for (int i = 0; i < alpha; ++i) {
       data_[i] = reinterpret_cast<T*> (new char[sizeof(T) * bucket_size]);
     }
@@ -295,14 +287,14 @@ Deque<T>::Deque(const Deque<T>& another) {
       } else {
         T* bucket = reinterpret_cast<T*>(new char[bucket_size * sizeof(T)]);
         if (outer == outer_front) {
-          for (; inner < bucket_size - inner_front; ++inner) { // проверяем первый бакет
+          for (; inner < bucket_size - inner_front; ++inner) {
             new (bucket + inner_front + inner) T(another.data_[outer][inner]);
           }
-        } else if (outer != outer_back) { // заполняем внутренние бакеты
+        } else if (outer != outer_back) { 
           for (; inner < bucket_size; ++inner) {
             new (bucket + inner) T(another.data_[outer][inner]);
           }
-        } else if (outer == outer_back) { // проверяем последний бакет
+        } else if (outer == outer_back) {
           for (; inner < inner_back; ++inner) {
             new (bucket + inner) T(another.data_[outer][inner]);
           }
@@ -311,7 +303,7 @@ Deque<T>::Deque(const Deque<T>& another) {
       }
     }
   } catch (...) {
-    for (size_t delete_outer = 0; delete_outer <= outer; ++delete_outer) { // del полностью все бакеты до того на к-ом исключение (его не трогаем)
+    for (size_t delete_outer = 0; delete_outer <= outer; ++delete_outer) {
       if (data_[delete_outer] == nullptr) {
         continue;
       }
@@ -320,7 +312,7 @@ Deque<T>::Deque(const Deque<T>& another) {
           (data_[outer] + del_inner)->~T();
         }
       } else {
-        for (size_t del_inner = 0; del_inner < inner; ++del_inner) { // обрабатываем бакет на котором получили исключение
+        for (size_t del_inner = 0; del_inner < inner; ++del_inner) {
           (data_[outer] + del_inner)->~T();
         }
       }
@@ -353,9 +345,6 @@ Deque<T>::~Deque() {
     delete[] reinterpret_cast<char*>(data_[outer]);
   }
 }
-
-
-// --------------------------------------------------------------------------------------------------------------------------------
 
 template<typename T>
 void Deque<T>::swap(Deque<T>& another) {
@@ -417,7 +406,6 @@ const T& Deque<T>::at (size_t index) const {
   }
 }
 
-// ------------------------------------------------- PUSH_BACK/FRONT, POP_BACK/FRONT ---------------------------------------------- //
 template<typename T>
 void Deque<T>::resize() {
   std::vector<T*> new_data_(data_.size() * delta);
@@ -432,7 +420,7 @@ void Deque<T>::resize() {
 
 template<typename T>
 void Deque<T>::push_back(const T& element) {
-  if (inner_back < (bucket_size - 1) ) { // если в последнем bucket есть место для нового элемента
+  if (inner_back < (bucket_size - 1) ) {
     ++inner_back;
     try {
       new (data_[outer_back] + inner_back) T(element);
@@ -440,7 +428,7 @@ void Deque<T>::push_back(const T& element) {
       --inner_back;
       throw;
     }
-  } else if (outer_back < (data_.size() - 1)) { // если последний bucket полностью заполнен и можно добавить еще бакет
+  } else if (outer_back < (data_.size() - 1)) {
     ++outer_back;
     data_[outer_back] = reinterpret_cast<T*>(new char[bucket_size * sizeof(T)]);
     try {
@@ -451,9 +439,9 @@ void Deque<T>::push_back(const T& element) {
       throw;
     }
     inner_back = 0;
-  } else { // нужно расширять внешний массив указателей
+  } else {
     resize();
-    if (inner_back < (bucket_size - 1) ) { // если в последнем bucket есть место для нового элемента
+    if (inner_back < (bucket_size - 1) ) { 
       ++inner_back;
       try {
         new (data_[outer_back] + inner_back) T(element);
@@ -464,7 +452,7 @@ void Deque<T>::push_back(const T& element) {
         throw;
       }
     }
-    if ((inner_back == (bucket_size - 1) ) && (outer_back < (data_.size() - 1) )) { // если последний bucket полностью заполнен и можно добавить еще бакет
+    if ((inner_back == (bucket_size - 1) ) && (outer_back < (data_.size() - 1) )) {
       ++outer_back;
       data_[outer_back] = reinterpret_cast<T*>(new char[bucket_size * sizeof(T)]);
       try {
@@ -505,7 +493,7 @@ void Deque<T>::push_front(const T& element) {
       ++inner_front;
       throw;
     }
-  } else if (outer_front > 0) { // в первом бакете мест нет но можно сделать новый бакет
+  } else if (outer_front > 0) {
     --outer_front;
     data_[outer_front] = reinterpret_cast<T*>(new char[bucket_size * sizeof(T)]);
     try {
@@ -516,16 +504,16 @@ void Deque<T>::push_front(const T& element) {
       throw;
     }
     inner_front = bucket_size - 1;
-  } else { // нужно расширять массив
+  } else {
     resize();
-    if (inner_front > 0) { // в первом бакете есть места
+    if (inner_front > 0) { 
       try {
         new (data_[outer_front] + inner_front) T(element);
       } catch (...) {
         (data_[outer_front] + inner_front) -> ~T();
         throw;
       }
-    } else if (outer_front > 0) { // в первом бакете мест нет но можно сделать новый бакет
+    } else if (outer_front > 0) { 
       --outer_front;
       data_[outer_front] = reinterpret_cast<T*>(new char[bucket_size * sizeof(T)]);
       try {
