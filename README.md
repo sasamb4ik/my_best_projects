@@ -17,7 +17,7 @@
 * [UnsupervisedLearning task](https://github.com/sasamb4ik/Internships/blob/unsupervised_learning/UnsupervisedLearning.ipynb)
 * [SolvingTrees task](https://github.com/sasamb4ik/Internships/blob/solving_trees/SolvingTrees.ipynb)
 * [NLP task](https://github.com/sasamb4ik/Internships/blob/nlp/nlp.ipynb)
-* Understanding of gradient boosting
+* [Understanding of gradient boosting](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
 
 ### Another projects
 * [bash-скрипт](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
