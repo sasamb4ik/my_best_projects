@@ -36,24 +36,22 @@ do
   done
 done
 
-# parsing finished, now starting script
 
-mkdir "$archive" # делаем папку из которой потом сделаем архив
+mkdir "$archive" 
 
-for key in "${!dictionary[@]}"; do # перебираем расширения
-  compiler=${dictionary[$key]} # каждому расширению сопоставляем компилятор
-  find "$source" -name "*.$key" | while read file # перебор файлов по адресу $source с расширением $key
+for key in "${!dictionary[@]}"; do
+  compiler=${dictionary[$key]}
+  find "$source" -name "*.$key" | while read file
   do
     filename="$(basename -- "$file")"
     filename="${filename%.*}"
     buf=$(realpath --relative-to="$source" "$file")
     path=$(dirname "$buf")
-    mkdir -p "$archive/$path"  # тут и 2 строчки выше копирую иерархию
+    mkdir -p "$archive/$path"
     eval "$compiler" -o "$archive/$path/$filename.exe" "$file"
   done
 done
 
 tar -czf "$archive.tar.gz" "$archive" 
 
-###
 echo "complete"
