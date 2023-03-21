@@ -4,7 +4,7 @@
 
 
 ### C++
-* std::deque implementation
+* [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * std::string implementation
 * long_arithmetics
 * geometry_classes
