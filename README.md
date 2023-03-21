@@ -11,7 +11,7 @@
 * [matrices](https://github.com/sasamb4ik/Internships/tree/matrices/matrices)
 
 ### Machine Learning
-* FIFA DataSet analyse & visualization
+* [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
 * Classification task
 * LinearRegression task
 * UnsupervisedLearning task
