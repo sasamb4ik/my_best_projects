@@ -20,5 +20,5 @@
 * Understanding of gradient boosting
 
 ### Another projects
-* bash-скрипт (подобие системы сборки)
+* [bash-скрипт](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
 * console mine sweeper
