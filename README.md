@@ -5,7 +5,7 @@
 
 ### C++
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
-* std::string implementation
+* [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * long_arithmetics
 * geometry_classes
 * matrices
