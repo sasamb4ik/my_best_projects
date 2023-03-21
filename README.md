@@ -8,7 +8,7 @@
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * [long_arithmetics](https://github.com/sasamb4ik/Internships/tree/long_arithmetics/long_arithmetics)
 * [geometry_classes](https://github.com/sasamb4ik/Internships/tree/geometry_classes/geometry_classes)
-* matrices
+* [matrices](https://github.com/sasamb4ik/Internships/tree/matrices/matrices)
 
 ### Machine Learning
 * FIFA DataSet analyse & visualization
