@@ -3,9 +3,9 @@
 ### C++ (standart containers realizations)
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
-* [std::list]()
-* [std::unordered_map]()
-* [smart pointers]()
+* [std::list]
+* [std::unordered_map]
+* [smart pointers]
 
 ### Machine Learning
 * [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
