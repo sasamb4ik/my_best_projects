@@ -3,7 +3,7 @@
 ### C++ (standart containers realizations)
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
-* [std::list]
+* [std::list](https://github.com/sasamb4ik/Internships/tree/list)
 * [std::unordered_map]
 * [smart pointers]
 
