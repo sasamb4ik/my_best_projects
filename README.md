@@ -5,7 +5,7 @@
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * [std::list](https://github.com/sasamb4ik/Internships/tree/list)
 * [std::unordered_map](https://github.com/sasamb4ik/Internships/tree/unordered_map)
-* [smart pointers]
+* [smart pointers](https://github.com/sasamb4ik/Internships/tree/smartptr)
 
 ### Machine Learning
 * [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
