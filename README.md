@@ -17,5 +17,5 @@
 * [Understanding of gradient boosting](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
 
 ### Another projects
-* [bash-скрипт](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
-* [console mine sweeper](https://github.com/sasamb4ik/Internships/tree/minesweeper/minesweeper)
+* [bash unpack script](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
+* [python console mine sweeper](https://github.com/sasamb4ik/Internships/tree/minesweeper/minesweeper)
