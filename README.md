@@ -1,8 +1,5 @@
 # Internships (to be updated ...)
 
-пупу
-
-
 ### C++
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
