@@ -1,11 +1,11 @@
 # Internships (to be updated ...)
 
-### C++
+### C++ (standart containers realizations)
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
-* [long_arithmetics](https://github.com/sasamb4ik/Internships/tree/long_arithmetics/long_arithmetics)
-* [geometry_classes](https://github.com/sasamb4ik/Internships/tree/geometry_classes/geometry_classes)
-* [matrices](https://github.com/sasamb4ik/Internships/tree/matrices/matrices)
+* [std::list]()
+* [std::unordered_map]()
+* [smart pointers]()
 
 ### Machine Learning
 * [FIFA DataSet analyse & visualization](https://github.com/sasamb4ik/Internships/blob/analyse%26visualization/Tinkoff_visualization.ipynb)
