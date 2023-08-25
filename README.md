@@ -16,6 +16,7 @@
 * [NLP task](https://github.com/sasamb4ik/Internships/blob/nlp/nlp.ipynb)
 * [Understanding of gradient boosting](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
 
-### Another projects
+### Another & Python projects
 * [bash package script](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
 * [python console mine sweeper](https://github.com/sasamb4ik/Internships/tree/minesweeper/minesweeper)
+* [python TG bot "Игра в слова"](https://github.com/sasamb4ik/project2_cities)
