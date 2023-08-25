@@ -20,3 +20,4 @@
 * [bash package script](https://github.com/sasamb4ik/Internships/tree/build_system/build_system)
 * [python console mine sweeper](https://github.com/sasamb4ik/Internships/tree/minesweeper/minesweeper)
 * [python Telegram bot "Игра в слова"](https://github.com/sasamb4ik/project2_cities)
+* [python minimalistic pacman](https://github.com/sasamb4ik/firstpy_proj)
