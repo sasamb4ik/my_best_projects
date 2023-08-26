@@ -1,6 +1,6 @@
 # Internships (to be updated ...)
 
-### C++ (standart containers realizations)
+### C++ (standart containers implementations)
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * [std::list](https://github.com/sasamb4ik/Internships/tree/list)
