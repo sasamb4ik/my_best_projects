@@ -14,7 +14,7 @@
 * [Сетки 10 сюда](https://github.com/sasamb4ik/Internships/blob/linear_regression/Tinkoff_linear_regression.ipynb)
 * [Заметки по оптам](https://github.com/sasamb4ik/Internships/blob/unsupervised_learning/UnsupervisedLearning.ipynb)
 * [Сетки 8 сюда](https://github.com/sasamb4ik/Internships/blob/solving_trees/SolvingTrees.ipynb)
-* [Understanding of gradient boosting](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
+* [boosting_dbscan_small_hw](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
 
 ### Another & Python projects
 * [python Telegram bot "Игра в слова"](https://github.com/sasamb4ik/project2_cities)
