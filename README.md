@@ -13,7 +13,7 @@
 * [Решающее дерево без sklearn](https://github.com/sasamb4ik/my_best_projects/blob/classification_task/tree_no_sklearn.ipynb)
 * [LinearRegression task](https://github.com/sasamb4ik/Internships/blob/linear_regression/Tinkoff_linear_regression.ipynb)
 * [UnsupervisedLearning task](https://github.com/sasamb4ik/Internships/blob/unsupervised_learning/UnsupervisedLearning.ipynb)
-* [SolvingTrees task](https://github.com/sasamb4ik/Internships/blob/solving_trees/SolvingTrees.ipynb)
+* [Сетки 8 сюда](https://github.com/sasamb4ik/Internships/blob/solving_trees/SolvingTrees.ipynb)
 * [NLP task](https://github.com/sasamb4ik/Internships/blob/nlp/nlp.ipynb)
 * [Understanding of gradient boosting](https://github.com/sasamb4ik/Internships/blob/gradient_boosting/hse_boost.ipynb)
 
