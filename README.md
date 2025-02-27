@@ -19,4 +19,3 @@
 
 ### Another & Python projects
 * [python Telegram bot "Игра в слова"](https://github.com/sasamb4ik/project2_cities)
-* [python minimalistic pacman](https://github.com/sasamb4ik/firstpy_proj)
