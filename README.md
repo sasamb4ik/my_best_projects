@@ -5,7 +5,7 @@
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * [std::list](https://github.com/sasamb4ik/Internships/tree/list)
 * [std::unordered_map](https://github.com/sasamb4ik/my_best_projects/tree/unordered_map/unordered_map)
-* [smart pointers](https://github.com/sasamb4ik/Internships/tree/smartptr)
+* [smart pointers](https://github.com/sasamb4ik/my_best_projects/tree/smartptr/smartptr)
 
 ### Machine Learning
 * [Word2Vec: SkipGram модель](https://github.com/sasamb4ik/SkipGram)
