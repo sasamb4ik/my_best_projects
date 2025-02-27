@@ -4,7 +4,7 @@
 * [std::deque](https://github.com/sasamb4ik/Internships/tree/deque/deque)
 * [std::string](https://github.com/sasamb4ik/Internships/tree/string/string)
 * [std::list](https://github.com/sasamb4ik/Internships/tree/list)
-* [std::unordered_map](https://github.com/sasamb4ik/Internships/tree/unordered_map)
+* [std::unordered_map](https://github.com/sasamb4ik/my_best_projects/tree/unordered_map/unordered_map)
 * [smart pointers](https://github.com/sasamb4ik/Internships/tree/smartptr)
 
 ### Machine Learning
